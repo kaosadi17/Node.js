@@ -11,5 +11,6 @@ let roomPromise = new Promise(function(resolve,reject){
 
 roomPromise.then(function(fromResolve){
     console.log('the Room is ' + fromResolve);
+}).catch(function(fromReject){
+    console.log('the Room is ' + fromReject);
 });
-
